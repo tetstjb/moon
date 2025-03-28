@@ -18,6 +18,6 @@ def about():
 def contact():
     return render_template('contact.html')
 
-if __name__ == "__main__":
-    port = int(os.environ.get("PORT", 10000))  # Use the PORT assigned by Render
-    app.run(host="0.0.0.0", port=port, debug=True)
+if __name__ == '__main__':
+    # Set host to '0.0.0.0' to make the server accessible on the local network
+    app.run(host='0.0.0.0', port=10000, debug=True)
